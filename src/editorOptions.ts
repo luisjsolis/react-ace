@@ -50,7 +50,7 @@ const getAceInstance = () => {
   // Fallback for ace.require when vanilla ACE is hosted over a CDN
   if ((window as any).ace) {
     ace = (window as any).ace;
-    ace.acequire = (window as any).ace.require || (window as any).ace.acequire;
+    ace.acequire = (window as any).ace.acequire || (window as any).ace.require;
   } else {
     ace = require("brace");
   }
